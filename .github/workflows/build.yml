@@ -1,4 +1,4 @@
-name: OpenWrt Builder (Self-hosted)
+name: OpenWrt Builder
 
 /on:
   workflow_dispatch:
