@@ -1,6 +1,6 @@
 name: OpenWrt Builder (Self-hosted)
 
-/on:
+on:
   workflow_dispatch:
 
 env:
