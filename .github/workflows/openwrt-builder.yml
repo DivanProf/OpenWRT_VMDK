@@ -25,7 +25,7 @@ jobs:
 
     - name: Prepare build directory
       run: |
-        mkdir -p /root/openwrt
+        mkdir -p /divanprof/openwrt
         cd /root
         if [ ! -d openwrt/.git ]; then
           echo "Cloning OpenWrt source..."
@@ -36,7 +36,7 @@ jobs:
           git fetch origin $REPO_BRANCH
           git reset --hard origin/$REPO_BRANCH
         fi
-        ln -sf /root/openwrt $GITHUB_WORKSPACE/openwrt
+        ln -sf /divanprof/openwrt $GITHUB_WORKSPACE/openwrt
 
     - name: Load custom feeds
       run: |
